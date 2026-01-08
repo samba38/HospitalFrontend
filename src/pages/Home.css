@@ -1,0 +1,41 @@
+.Home-container{
+    padding: 20px;
+    background-image: url('https://res.cloudinary.com/dqpacvvei/image/upload/v1766329224/health-medical-science-healthcare-virtual-interface-innovation-digital-technology-future-hospital-background-172987576_g0rvpn.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-hopsital-name{
+    text-align: center;
+    color: #37474F;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.hospital-img{
+    width: 1800px;
+    height: 500px;
+    align-self: center;
+}
+
+.home-hopsital-description{
+    color: #757575;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.hospital-img2{
+    width: 600px;
+    height: 400px;
+}
+
+.home-hopsital-achievements{
+    color: #004D40;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
