@@ -1,41 +1,204 @@
-.Home-container{
-    padding: 20px;
-    background-image: url('https://res.cloudinary.com/dqpacvvei/image/upload/v1766329224/health-medical-science-healthcare-virtual-interface-innovation-digital-technology-future-hospital-background-172987576_g0rvpn.jpg');
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+/* =========================
+   BASE (DESKTOP DEFAULT)
+========================= */
+
+.Home-container {
+  padding: 20px;
+  background-image: url('https://res.cloudinary.com/dqpacvvei/image/upload/v1766329224/health-medical-science-healthcare-virtual-interface-innovation-digital-technology-future-hospital-background-172987576_g0rvpn.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.home-hopsital-name{
-    text-align: center;
-    color: #37474F;
-    font-style: italic;
-    font-size: 40px;
+.home-hopsital-name {
+  text-align: center;
+  color: #37474F;
+  font-style: italic;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-.hospital-img{
-    width: 1800px;
-    height: 500px;
-    align-self: center;
+.hospital-img {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  align-self: center;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
-.home-hopsital-description{
-    color: #757575;
-    font-family: Roboto;
-    font-size: 25px;
-    font-weight: 400;
+.home-hopsital-description {
+  color: #757575;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 20px 0;
+  text-align: center;
 }
 
-.hospital-img2{
-    width: 600px;
+.items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Achievements */
+
+.home-hopsital-achievements {
+  color: #004D40;
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 30px 0 15px;
+}
+
+.hospital-img2 {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Stats Videos */
+
+.hospital-img3 {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+/* Lists */
+
+.list-items {
+  list-style-type: none;
+  color: #37474F;
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px;
+  text-align: center;
+}
+
+.total-list {
+  color: #004D40;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+/* =========================
+   TABLET (≤ 1024px)
+========================= */
+
+@media (max-width: 1024px) {
+
+  .hospital-img {
     height: 400px;
+  }
+
+  .hospital-img2 {
+    width: 80%;
+    height: auto;
+  }
+
+  .hospital-img3 {
+    width: 90%;
+    height: auto;
+  }
+
+  .home-hopsital-description {
+    font-size: 22px;
+  }
+
+  .list-items {
+    font-size: 26px;
+  }
+
+  .total-list {
+    font-size: 22px;
+  }
 }
 
-.home-hopsital-achievements{
-    color: #004D40;
-    font-family: Roboto;
+/* =========================
+   MOBILE (≤ 768px)
+========================= */
+
+@media (max-width: 768px) {
+
+  .Home-container {
+    padding: 12px;
+  }
+
+  .home-hopsital-name {
+    font-size: 28px;
+  }
+
+  .hospital-img {
+    height: 220px;
+  }
+
+  .home-hopsital-description {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .home-hopsital-achievements {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hospital-img2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .hospital-img3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .list-items {
     font-size: 20px;
-    font-weight: bold;
-    text-decoration: underline;
+    margin: 10px 0;
+  }
+
+  .total-list {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (≤ 480px)
+========================= */
+
+@media (max-width: 480px) {
+
+  .home-hopsital-name {
+    font-size: 24px;
+  }
+
+  .hospital-img {
+    height: 180px;
+  }
+
+  .home-hopsital-description {
+    font-size: 16px;
+  }
+
+  .list-items {
+    font-size: 18px;
+  }
+
+  .total-list {
+    font-size: 16px;
+  }
 }

@@ -13,7 +13,7 @@ function MyAppointments() {
 
   return (
     <div style={{ padding: "40px" }}>
-      <h1>My Appointments</h1>
+      <h1 style={{fontSize:'20px'}}>My Appointments</h1>
 
       {appointments.length === 0 && <p>No appointments yet</p>}
 

@@ -1,10 +1,14 @@
-/* Navbar container */
+/* =====================
+   NAVBAR BASE (DESKTOP)
+===================== */
+
 .navbar {
+  width: 97.5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 30px;
-  background-color: #445a64; /* same dark color */
+  padding: 14px 20px;
+  background-color: #445a64;
 }
 
 /* Logo */
@@ -13,29 +17,31 @@
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
+  max-width: 70%;
 }
 
-/* Right side links container */
+/* Right side links */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 24px; /* 🔥 SPACE BETWEEN ITEMS */
+  gap: 20px;
 }
 
-/* All links */
+/* Links */
 .nav-links a {
-  color: white;              /* 🔥 WHITE TEXT */
+  color: white;
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
-/* Hover effect */
+/* Hover */
 .nav-links a:hover {
   color: #d1c4e9;
 }
 
-/* Buttons (Logout) */
+/* Logout button */
 .nav-links button {
   background: white;
   color: #445a64;
@@ -48,4 +54,56 @@
 
 .nav-links button:hover {
   background: #e0e0e0;
+}
+
+/* =====================
+   MOBILE FIX (≤ 768px)
+===================== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 14px;
+    width: 92%;
+  }
+
+  .logo-link {
+    font-size: 16px;
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;              /* 🔥 ALLOW WRAPPING */
+    gap: 10px;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    font-size: 14px;
+  }
+}
+
+/* =====================
+   SMALL MOBILE (≤ 480px)
+===================== */
+
+@media (max-width: 480px) {
+
+  .logo-link {
+    font-size: 15px;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    font-size: 13px;
+  }
 }
